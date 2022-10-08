@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/react-social-network/static/css/main.073c9b0a.css",
-    "main.js": "/react-social-network/static/js/main.12df8343.js",
-    "static/js/787.b2625337.chunk.js": "/react-social-network/static/js/787.b2625337.chunk.js",
-    "static/media/logo.svg": "/react-social-network/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/react-social-network/static/css/main.59b0f9d2.css",
+    "main.js": "/react-social-network/static/js/main.ed0f9856.js",
+    "static/media/06.png": "/react-social-network/static/media/06.85ae995b3ac496cb676a.png",
+    "static/media/05.png": "/react-social-network/static/media/05.a07c969a49ca94915ab0.png",
+    "static/media/user.jpg": "/react-social-network/static/media/user.8413939bfd646a8fe010.jpg",
+    "static/media/02.png": "/react-social-network/static/media/02.5e134d518bad8bbbfa85.png",
+    "static/media/logo.png": "/react-social-network/static/media/logo.b6d9229e2f95030a8759.png",
+    "static/media/01.png": "/react-social-network/static/media/01.610c2cbdef63a17aaac9.png",
+    "static/media/07.png": "/react-social-network/static/media/07.e018078c6f4c96cc7188.png",
+    "static/media/04.png": "/react-social-network/static/media/04.5b745f5f2e059120818b.png",
+    "static/media/10.png": "/react-social-network/static/media/10.5c8781fee73d77e30524.png",
+    "static/media/03.png": "/react-social-network/static/media/03.1c300105703c4e42b3ce.png",
+    "static/media/calendar-icon.png": "/react-social-network/static/media/calendar-icon.e69bf402260aa4e50c55.png",
+    "static/media/cake-icon.png": "/react-social-network/static/media/cake-icon.bbcc00aaf961f92a801e.png",
     "index.html": "/react-social-network/index.html",
-    "main.073c9b0a.css.map": "/react-social-network/static/css/main.073c9b0a.css.map",
-    "main.12df8343.js.map": "/react-social-network/static/js/main.12df8343.js.map",
-    "787.b2625337.chunk.js.map": "/react-social-network/static/js/787.b2625337.chunk.js.map"
+    "main.59b0f9d2.css.map": "/react-social-network/static/css/main.59b0f9d2.css.map",
+    "main.ed0f9856.js.map": "/react-social-network/static/js/main.ed0f9856.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.12df8343.js"
+    "static/css/main.59b0f9d2.css",
+    "static/js/main.ed0f9856.js"
   ]
 }
