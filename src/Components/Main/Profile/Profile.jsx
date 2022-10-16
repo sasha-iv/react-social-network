@@ -69,7 +69,7 @@ const Profile = () => {
                         <span>{profile.position} at {profile.job}</span>
                     </div>
                     <div className='iconBlock'>
-                        <img src={iconHobby} alt='iconProfile'/>
+                        <img src={iconHobby} alt='icon-Profile'/>
                         <span>Hobby: {profile.hobby}</span>
                     </div>
                 </div>

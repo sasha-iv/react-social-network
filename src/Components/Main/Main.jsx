@@ -17,7 +17,7 @@ const Main = (props) => {
         <div className='main'>
             <Nav/>
             <Routes>
-                <Route exact path='/social-network-app' element={<Profile/>}/>
+                <Route exact path='/react-social-network' element={<Profile/>}/>
 
                 <Route path='/profile' element={<Profile/>}/>
                 <Route exact path='/dialogs/*' element={<Dialogs store={props.store} dialogs={props.mainState.dialogsPage.dialogs} messages={props.mainState.dialogsPage.messages} dispatch={props.dispatch}/>}/>

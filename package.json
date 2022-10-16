@@ -1,7 +1,7 @@
 {
   "name": "test-react-app",
   "version": "0.1.0",
-  "homepage": "https://sasha-iv.github.io/social-network-app",
+  "homepage": "https://sasha-iv.github.io/react-social-network",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
