@@ -1,0 +1,89 @@
+@import "../mixin";
+$size: 10px;
+
+.postsWrapper{
+  width: 60%;           //60!
+  min-width: 520px;
+  @include flexBox(normal, center);
+  flex-direction: column;
+  padding-left: $size;
+}
+
+.posts{
+  width: 80%;
+  @include flexBox(center, center);
+  flex-direction: column;
+}
+.postImages{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+.post{
+  @include blockWithShadow(520px, 0px);
+  width: 100%;
+  margin-bottom: $size;
+  padding: $size * 2;
+  flex-direction: column;
+
+  img{
+    width: 230px;
+    margin: $size / 2;
+    border-radius: $size / 2;
+  }
+  p{
+    margin: $size 0px;
+  }
+  button{
+    background-color: white;
+    color: rgba(2, 16, 101, 0.91);
+  }
+
+}
+.btnStyle{
+  width: 80px;
+  height: 30px;
+  border: 2px solid rgba(2, 16, 101, 0.91);
+  border-radius: 30px;
+}
+
+.newPost{
+  @include blockWithShadow(520px, 0px);
+  @include flexBox(flex-start, flex-start);
+  flex-direction: column;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: $size * 2;
+}
+#inputFile{
+  margin: 10px 0px;
+}
+.textarea{
+  width: 100%;
+  min-height: 100px;
+  outline: none;
+  resize: none;
+  padding: $size;
+  border-radius: $size;
+}
+.button {
+  background-color: rgba(2, 16, 101, 0.91);
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(34, 54, 178, 0.99);
+    border: none;
+  }
+}
+
+@media(max-width: 700px){
+  .postsWrapper, .post, .newPost, {
+    min-width: 250px;
+  }
+  .postImages{
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,63 @@
+@import "../mixin";
+@import '../Nav/Nav';
+@import '../Posts/Posts';
+
+.profileWrapper{
+  @include blockWithShadow(250px, 600px);
+  @include  flexBox(center, center);
+  flex-direction: column;
+  width: calc(60% - 20px);
+  margin: 20px 10px;
+
+  h1{
+    width: 100%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 25px;
+  }
+  button{
+    margin: 30px;
+  }
+}
+.userProfile{
+  width: 100%;
+  @include flexBox(center, center);
+
+  img{
+    margin: 20px 0px;
+    min-width: 250px;
+  }
+}
+.iconsWrapper{
+  @include flexBox(center, flex-start);
+  flex-wrap: wrap;
+
+}
+.column{
+  @include flexBox(center, flex-start);
+  flex-direction: column;
+  width: 50%;
+  min-width: 240px;
+}
+.iconBlock{
+  @include flexBox(flex-start, center);
+  margin: 5px;
+  width: 90%;
+  min-height: 60px;
+  padding: 5px;
+  min-width: 230px;
+  border-bottom: 1px solid grey;
+
+  img{
+    width: 30px;
+    height: 30px;
+  }
+  span{
+    margin-left: 10px;
+    font-size: 15px;
+  }
+}

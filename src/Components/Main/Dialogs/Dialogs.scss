@@ -1,0 +1,151 @@
+@import "../mixin";
+@import "../Posts/Posts";
+
+.dialogs{
+  width: 60%;
+  min-width: 520px;
+  display: flex;
+  justify-content: center;
+}
+.dialogsElement{
+  @include blockWithShadow(250px, 600px);
+  padding: $size / 2;
+  margin: $size * 2;
+
+}
+.usersBlock{
+  width: 30%;
+  margin-bottom: auto;
+}
+.textBlock{
+  width: 60%;
+  margin-bottom: $size * 2;
+}
+
+.dialogItem{
+  margin: $size;
+  min-width: 200px;
+  @include flexBox(flex-start, center);
+  flex-wrap: wrap;
+  border-bottom: 1px solid grey;
+  padding: $size / 2;
+
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+  }
+
+  span{
+    padding: $size / 2;
+    color: #575656;
+
+  }
+}
+.name{
+  margin: $size;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  flex-basis: calc(100% - 70px);
+}
+.messagesBlock{
+  padding: $size;
+
+  span{
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    padding: $size;
+  }
+}
+.user{
+  @include flexBox(center, center);
+  border-bottom: 1px solid black;
+  padding: $size;
+
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+  }
+}
+.messagesContainer{
+  padding: 10px;
+  margin: $size 0px;
+}
+.message{
+  width: 50%;
+  min-width: 180px;
+  margin: $size 0px;
+  padding: 15px;
+  border-radius: 20px;
+  position: relative;
+
+  &::before, &::after{
+    content: '';
+    position: absolute;
+    height: 25px;
+    bottom: 0;
+  }
+}
+.fromMe{
+  background-color: rgb(196, 224, 248);
+  margin-left: auto;
+
+  &::before{
+    width: 20px;
+    right: -7px;
+    background-color: rgb(196, 224, 248);
+    border-bottom-left-radius: 16px 14px;
+  }
+  &:after{
+    width: 9px;
+    background-color: white;
+    right: -9px;
+    border-bottom-left-radius: 10px;
+  }
+
+}
+.notFromMe{
+  background-color: #e5e3e3;
+
+  &::before{
+    width: 20px;
+    left: -7px;
+    background-color: #e5e3e3;
+    border-bottom-right-radius: 16px 14px;
+  }
+  &:after{
+    width: 9px;
+    background-color: white;
+    left: -9px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+
+
+@media(max-width: 1700px){
+  .dialogs{
+    width: 70%;
+  }
+}
+@media(max-width: 900px){
+  .dialogs{
+    width: 100%;
+  }
+}
+@media(max-width: 700px){
+  .dialogs{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+  }
+  .textBlock{
+    width: 50%;
+  }
+}

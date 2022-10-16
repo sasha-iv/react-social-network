@@ -1,0 +1,14 @@
+@mixin flexBox($positionJ, $positionA){
+  display: flex;
+  align-items: $positionA;
+  justify-content: $positionJ;
+}
+
+@mixin blockWithShadow($width, $height){
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px #b9b9b9;
+  min-width: $width;
+  min-height: $height;
+}

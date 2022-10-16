@@ -1,0 +1,51 @@
+$sizeImg: 35px;
+
+@import "../mixin";
+@import "../Posts/Posts";
+
+.events{
+  @include blockWithShadow(250px, 0px);
+  height: 200px;
+
+  h2{
+    color: grey;
+    font-weight: 500;
+    text-transform: uppercase ;
+    padding: $size;
+  }
+
+  img{
+    width: $sizeImg;
+    height: $sizeImg;
+  }
+}
+.eventsItem{
+  width: 95%;
+  margin: $size / 2;
+  @include flexBox(flex-start, center);
+  padding: $size / 2;
+
+  span{
+    margin-left: $size;
+    color: #484747;
+  }
+}
+
+.leftEvent {
+  width: 100%;
+  display: block;
+  min-width: 230px;
+
+  @media (min-width: 1700px) {
+    display: none;
+  }
+}
+
+.rightEvent {
+  width: 20%;
+  display: none;
+
+  @media (min-width: 1700px) {
+    display: block;
+  }
+}
