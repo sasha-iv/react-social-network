@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-social-network/static/css/main.59b0f9d2.css",
-    "main.js": "/react-social-network/static/js/main.ed0f9856.js",
+    "main.css": "/react-social-network/static/css/main.8470e48f.css",
+    "main.js": "/react-social-network/static/js/main.1a7351b5.js",
     "static/media/06.png": "/react-social-network/static/media/06.85ae995b3ac496cb676a.png",
     "static/media/05.png": "/react-social-network/static/media/05.a07c969a49ca94915ab0.png",
     "static/media/user.jpg": "/react-social-network/static/media/user.8413939bfd646a8fe010.jpg",
@@ -12,14 +12,20 @@
     "static/media/04.png": "/react-social-network/static/media/04.5b745f5f2e059120818b.png",
     "static/media/10.png": "/react-social-network/static/media/10.5c8781fee73d77e30524.png",
     "static/media/03.png": "/react-social-network/static/media/03.1c300105703c4e42b3ce.png",
+    "static/media/icon-user.png": "/react-social-network/static/media/icon-user.557587208eb9e232f2ca.png",
+    "static/media/icon-phone.png": "/react-social-network/static/media/icon-phone.2ddd243efeb36258a44a.png",
+    "static/media/icon-location.png": "/react-social-network/static/media/icon-location.4ba2450b71e973e57b09.png",
     "static/media/calendar-icon.png": "/react-social-network/static/media/calendar-icon.e69bf402260aa4e50c55.png",
     "static/media/cake-icon.png": "/react-social-network/static/media/cake-icon.bbcc00aaf961f92a801e.png",
+    "static/media/icon-email.png": "/react-social-network/static/media/icon-email.00b77611c2b53e1aed4a.png",
+    "static/media/icon-date-of-birth.png": "/react-social-network/static/media/icon-date-of-birth.099f5e48e4c3687a880f.png",
+    "static/media/icon-id-card.png": "/react-social-network/static/media/icon-id-card.2552777a5b9e818d873c.png",
     "index.html": "/react-social-network/index.html",
-    "main.59b0f9d2.css.map": "/react-social-network/static/css/main.59b0f9d2.css.map",
-    "main.ed0f9856.js.map": "/react-social-network/static/js/main.ed0f9856.js.map"
+    "main.8470e48f.css.map": "/react-social-network/static/css/main.8470e48f.css.map",
+    "main.1a7351b5.js.map": "/react-social-network/static/js/main.1a7351b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.59b0f9d2.css",
-    "static/js/main.ed0f9856.js"
+    "static/css/main.8470e48f.css",
+    "static/js/main.1a7351b5.js"
   ]
 }
