@@ -7,7 +7,7 @@ import Events from "../Events/Events";
 const UserPhoto = (props) => {
     return(
         <div className='userPhoto'>
-            <img src={userPhoto} alt='userPhoto'/>
+            <img src={userPhoto} alt='user-Photo'/>
             <h1>{props.name}</h1>
             <span>{props.nick}</span>
         </div>
