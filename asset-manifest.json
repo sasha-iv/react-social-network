@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-social-network/static/css/main.96a7bf20.css",
-    "main.js": "/react-social-network/static/js/main.4c43a6c6.js",
+    "main.css": "/react-social-network/static/css/main.1a76d2a1.css",
+    "main.js": "/react-social-network/static/js/main.73a73a6b.js",
     "static/media/user.jpg": "/react-social-network/static/media/user.8413939bfd646a8fe010.jpg",
     "static/media/logo.png": "/react-social-network/static/media/logo.b6d9229e2f95030a8759.png",
     "static/media/user18.jpg": "/react-social-network/static/media/user18.10798d04e20035048ca0.jpg",
@@ -21,11 +21,11 @@
     "static/media/user17.jpg": "/react-social-network/static/media/user17.8cc29e9427f8e0b8810f.jpg",
     "static/media/user7.jfif": "/react-social-network/static/media/user7.0ba774cda67bb5cc610f.jfif",
     "index.html": "/react-social-network/index.html",
-    "main.96a7bf20.css.map": "/react-social-network/static/css/main.96a7bf20.css.map",
-    "main.4c43a6c6.js.map": "/react-social-network/static/js/main.4c43a6c6.js.map"
+    "main.1a76d2a1.css.map": "/react-social-network/static/css/main.1a76d2a1.css.map",
+    "main.73a73a6b.js.map": "/react-social-network/static/js/main.73a73a6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.96a7bf20.css",
-    "static/js/main.4c43a6c6.js"
+    "static/css/main.1a76d2a1.css",
+    "static/js/main.73a73a6b.js"
   ]
 }
