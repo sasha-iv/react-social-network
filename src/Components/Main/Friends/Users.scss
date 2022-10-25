@@ -1,0 +1,81 @@
+@import '../../Main/mixin';
+
+.usersWrapper{
+  max-height: calc(100vh - 75px);
+  overflow-x: hidden;
+  width: calc(60% - 40px);
+  min-height: 600px;
+  margin: 20px 5px 5px 5px;
+  @include blockWithShadow(520px, 0px);
+}
+.filter{
+  width: 100%;
+  min-height: 100px;
+  @include flexBox(center, center);
+  border-bottom: 1px solid grey;
+
+  button{
+    margin: 15px;
+    width: 100px;
+    height: 35px;
+  }
+
+  a{
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    margin: 15px;
+  }
+}
+
+.usersContainer{
+  @include flexBox(center, center);
+  flex-wrap: wrap;
+}
+.users-all{
+  @include flexBox(center, center);
+  @include blockWithShadow(200px, 0px);
+  flex-direction: column;
+  background-color: #e5e3e3;
+  border-radius: 10px;
+  margin: 20px;
+  width: 200px;
+  padding: 10px;
+
+  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+  }
+  span, h4{
+    margin: 3px;
+  }
+
+  button, a{
+    background-color: #f5f4f4;
+    color: rgb(2, 16, 101);
+    font-size: 12px;
+    margin: 3px;
+
+    &:hover{
+      scale: 1.08;
+      cursor: pointer;
+    }
+  }
+  a{
+    text-decoration: none;
+    font-size: 14px;
+  }
+}
+.userBtns{
+  @include flexBox(center, center);
+  flex-wrap: wrap;
+}
+
+@media(max-width: 800px){
+  .usersWrapper{
+    min-width: 250px;
+  }
+}

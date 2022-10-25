@@ -8,20 +8,22 @@
   justify-content: center;
 }
 .dialogsElement{
-  @include blockWithShadow(250px, 600px);
+  @include blockWithShadow(250px, 800px);
   padding: $size / 2;
-  margin: $size * 2;
+  position: relative;
+
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+  }
+
+  .countMessages{
+    top: 130px;
+    right: 10px;
+  }
 
 }
-.usersBlock{
-  width: 30%;
-  margin-bottom: auto;
-}
-.textBlock{
-  width: 60%;
-  margin-bottom: $size * 2;
-}
-
 .dialogItem{
   margin: $size;
   min-width: 200px;
@@ -29,12 +31,6 @@
   flex-wrap: wrap;
   border-bottom: 1px solid grey;
   padding: $size / 2;
-
-  img{
-    width: 50px;
-    height: 50px;
-    border-radius: 40px;
-  }
 
   span{
     padding: $size / 2;
@@ -50,31 +46,46 @@
   font-weight: 500;
   flex-basis: calc(100% - 70px);
 }
-.messagesBlock{
-  padding: $size;
 
-  span{
-    text-align: center;
-    display: block;
-    font-size: 18px;
-    font-weight: 500;
-    padding: $size;
-  }
+.usersBlock{
+  width: 30%;
+  margin-bottom: auto;
+  margin-right: 10px;
+  margin-left: 10px;
 }
+
+.textBlock{
+  @include flexBox(flex-start, flex-start);
+  flex-direction: column;
+  width: 60%;
+  //margin-bottom: auto;
+  margin-left: 10px;
+
+  &-centered{
+    @include flexBox(center, center);
+  }
+
+}
+
 .user{
   @include flexBox(center, center);
   border-bottom: 1px solid black;
   padding: $size;
+  min-height: 80px;
+  width: 100%;
 
-  img{
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
+  h3{
+    margin: 10px;
   }
 }
 .messagesContainer{
   padding: 10px;
   margin: $size 0px;
+  min-height: 530px;
+  width: 100%;
+  overflow-x: hidden;
+  max-height: 530px;
+
 }
 .message{
   width: 50%;
@@ -147,5 +158,10 @@
   }
   .textBlock{
     width: 50%;
+    margin-left: 0;
+  }
+  .usersBlock{
+    margin-right: 0;
+    margin-left: 0;
   }
 }

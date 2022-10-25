@@ -14,7 +14,6 @@
 .userPhoto{
   @include flexBox(center, center);
   flex-direction: column;
-  margin-bottom: 40px;
 
 
   img{
@@ -35,26 +34,25 @@
 }
 
 nav{
+  position: relative;
+  margin-top: 40px;
 
   a{
     display: block;
-    padding: 5px 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 10px 5px;
     color: #393a3a;
     text-decoration: none;
     font-size: 20px;
     width: 85%;
-    //border: 1px solid white;
 
     &:hover{
-      //background-color: #f0f0f1;
+      background-color: #f0f0f1;
       transition: .5s;
       transform: translateX(10px);
       scale: 1.05;
+      border-radius: 10px;
+      padding: 5px 10px;
     }
   }
 }
-
-//@media(max-width: 850px){
-//
-//}

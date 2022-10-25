@@ -26,7 +26,6 @@ const Nav = () => {
                     <NavLink to='/posts'>Posts</NavLink>
                     <NavLink to='/photos'>Photos</NavLink>
                     <NavLink to='/videos'>Videos</NavLink>
-
                 </nav>
             </div>
             <Events customClass="leftEvent"/>

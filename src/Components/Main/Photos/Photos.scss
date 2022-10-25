@@ -1,6 +1,33 @@
+@import '../mixin';
+
+.photosWrapper{
+  @include blockWithShadow(250px, 600px);
+  width: calc(60% - 20px);
+  max-height: calc(100vh - 80px);
+  overflow-x: hidden;
+}
 .photos{
-  background-color: #95cefd;
-  width: 60%;
-  min-height: 600px;
-  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  @include flexBox(center, center);
+  flex-wrap: wrap;
+
+  img {
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px #b9b9b9;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .focused {
+    position: absolute;
+    width: 60%;
+    z-index: 1;
+  }
+
 }

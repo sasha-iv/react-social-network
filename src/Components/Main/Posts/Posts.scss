@@ -2,24 +2,20 @@
 $size: 10px;
 
 .postsWrapper{
-  width: 60%;           //60!
+  max-height: calc(100vh - 50px);
+  overflow-x: hidden;
+  width: calc(60% - $size);           //60!
   min-width: 520px;
   @include flexBox(normal, center);
   flex-direction: column;
-  padding-left: $size;
+  margin-left: $size;
 }
-
 .posts{
-  width: 80%;
+  width: calc(100% - 30px);
   @include flexBox(center, center);
   flex-direction: column;
 }
-.postImages{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
 
-}
 .post{
   @include blockWithShadow(520px, 0px);
   width: 100%;
@@ -28,49 +24,73 @@ $size: 10px;
   flex-direction: column;
 
   img{
-    width: 230px;
-    margin: $size / 2;
+    width: 100%;
+    margin: 10px 0px;
     border-radius: $size / 2;
   }
+
   p{
     margin: $size 0px;
   }
   button{
     background-color: white;
     color: rgba(2, 16, 101, 0.91);
-  }
 
+    &:hover{
+      scale: 1.08;
+      cursor: pointer;
+    }
+  }
 }
+
+.postInfo{
+  @include flexBox(flex-start, center);
+
+  span{
+    color: grey;
+    margin-left: 10px;
+  }
+}
+
 .btnStyle{
-  width: 80px;
+  width: 70px;
   height: 30px;
-  border: 2px solid rgba(2, 16, 101, 0.91);
+  border: 1px solid rgba(2, 16, 101, 0.91);
   border-radius: 30px;
+  @include flexBox(center, center);
+
+  img{
+    width: 20px;
+    height: 20px;
+  }
+  span{
+    margin-right: 5px;
+  }
 }
 
 .newPost{
-  @include blockWithShadow(520px, 0px);
+  @include blockWithShadow(520px, max-content);
   @include flexBox(flex-start, flex-start);
   flex-direction: column;
-  width: 80%;
+  width: calc(100% - 30px);
   display: flex;
   flex-wrap: wrap;
   padding: $size * 2;
 }
-#inputFile{
-  margin: 10px 0px;
-}
+
 .textarea{
-  width: 100%;
+  width: calc(100% - 20px);
   min-height: 100px;
   outline: none;
   resize: none;
   padding: $size;
   border-radius: $size;
+  margin: 5px 10px;
 }
 .button {
   background-color: rgba(2, 16, 101, 0.91);
   color: white;
+  margin: 5px 10px;
 
   &:hover {
     cursor: pointer;
@@ -79,9 +99,10 @@ $size: 10px;
   }
 }
 
-@media(max-width: 700px){
+@media(max-width: 800px){
   .postsWrapper, .post, .newPost, {
     min-width: 250px;
+    margin-left: 0px;
   }
   .postImages{
     flex-wrap: wrap;
