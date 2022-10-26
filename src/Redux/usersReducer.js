@@ -1,11 +1,11 @@
 import user1 from "../images/user1.jpg";
 import user2 from "../images/user2.jpg";
-import user3 from "../images/user3.png";
+import user3 from "../images/user3.jpg";
 import user4 from "../images/user4.jpg";
 import user5 from "../images/user5.jpg";
-
 import user6 from "../images/user6.jpg";
-import user7 from "../images/user7.jfif";
+
+import user7 from "../images/user7.jpg";
 import user8 from "../images/user8.jpg";
 import user9 from "../images/user9.jpg";
 import user10 from "../images/user10.jpg";
@@ -110,6 +110,10 @@ const USERS_LIST = [
         followed: false,
         name: 'Mike Monte',
         location: 'France',
+        birthday: '06.03.1994',
+        phoneNumber: '+38 067 111 44 77',
+        email: 'mike@gmail.com',
+        hobby: 'playing the guitar'
     },
     {
         id: 9,
@@ -117,6 +121,10 @@ const USERS_LIST = [
         followed: false,
         name: 'Loren Castillo',
         location: 'Italy',
+        birthday: '18.06.1993',
+        phoneNumber: '+38 098 777 88 88',
+        email: 'loren@gmail.com',
+        hobby: 'cooking'
     },
     {
         id: 10,
@@ -124,6 +132,10 @@ const USERS_LIST = [
         followed: false,
         name: 'Janette Rick',
         location: 'USA',
+        birthday: '01.02.1996',
+        phoneNumber: '+38 050 444 33 33',
+        email: 'janette@gmail.com',
+        hobby: 'walk and fitness'
     },
     {
         id: 11,
@@ -131,6 +143,10 @@ const USERS_LIST = [
         followed: false,
         name: 'Kate Evelin',
         location: 'France',
+        birthday: '09.04.1995',
+        phoneNumber: '+38 050 555 33 313',
+        email: 'kate@gmail.com',
+        hobby: 'cooking and walk'
     },
     {
         id: 12,
@@ -138,6 +154,10 @@ const USERS_LIST = [
         followed: false,
         name: 'Zoi Morgan',
         location: 'Germany',
+        birthday: '05.05.1996',
+        phoneNumber: '+38 050 777 55 55',
+        email: 'zoi@gmail.com',
+        hobby: 'ride a bike'
     },
     {
         id: 13,
@@ -145,6 +165,10 @@ const USERS_LIST = [
         followed: true,
         name: 'Patricia Lebsack',
         location: 'France',
+        birthday: '02.08.1998',
+        phoneNumber: '+38 099 333 77 3773',
+        email: 'patricia@gmail.com',
+        hobby: 'watching films'
     },
     {
         id: 14,
@@ -152,6 +176,10 @@ const USERS_LIST = [
         followed: true,
         name: 'Ervin Howell',
         location: 'Germany',
+        birthday: '14.06.1998',
+        phoneNumber: '+38 099 234 45 56',
+        email: 'ervin@gmail.com',
+        hobby: 'sport and travelling'
     },
     {
         id: 15,
@@ -159,6 +187,10 @@ const USERS_LIST = [
         followed: true,
         name: 'Leanne Graham',
         location: 'Germany',
+        birthday: '11.12.1996',
+        phoneNumber: '+38 067 888 44 44',
+        email: 'leanne@gmail.com',
+        hobby: 'fitness and walk'
     },
     {
         id: 16,
@@ -166,34 +198,54 @@ const USERS_LIST = [
         followed: false,
         name: 'Kurtis Weissnat',
         location: 'Germany',
+        birthday: '13.07.1997',
+        phoneNumber: '+38 095 776 88 99',
+        email: 'kurtis@gmail.com',
+        hobby: 'playing football'
     },
     {
         id: 17,
         userPhoto: user17,
         followed: true,
-        name: 'Dennis Schulist',
+        name: 'Dennis Donovan',
         location: 'Germany',
+        birthday: '23.04.1996',
+        phoneNumber: '+38 067 333 22 11',
+        email: 'dennis@gmail.com',
+        hobby: 'ride a bike'
     },
     {
         id: 18,
         userPhoto: user18,
         followed: true,
-        name: 'Nicholas Runolfsdottir',
+        name: 'Nicholas Sparks',
         location: 'Germany',
+        birthday: '06.02.1997',
+        phoneNumber: '+38 068 999 88 77',
+        email: 'nic@gmail.com',
+        hobby: 'driving a car'
     },
     {
         id: 19,
         userPhoto: user19,
         followed: false,
-        name: 'Glenna Reichert',
+        name: 'Karolina Ripper',
         location: 'Germany',
+        birthday: '25.05.1994',
+        phoneNumber: '+38 050 666 33 66',
+        email: 'karolina@gmail.com',
+        hobby: 'ride a horse'
     },
     {
         id: 20,
         userPhoto: user20,
         followed: true,
-        name: 'Victor Plains',
+        name: 'Victor Clark',
         location: 'Germany',
+        birthday: '05.09.1991',
+        phoneNumber: '+38 099 111 44 77',
+        email: 'victor@gmail.com',
+        hobby: 'driving a car'
     },
 ]
 

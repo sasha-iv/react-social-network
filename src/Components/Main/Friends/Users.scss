@@ -47,7 +47,8 @@
     width: 100px;
     height: 100px;
     border-radius: 50px;
-
+    object-fit: cover;
+    object-position: center;
   }
   span, h4{
     margin: 3px;

@@ -1,11 +1,8 @@
 import React from "react";
-import './Post.scss';
 import likeIcon from '../../../../images/icon-heart.png'
 import postImg from '../../../../images/new-post.png'
 
 const Post = (props) => {
-    // console.log(props)
-
     return(
         <div className='post'>
             <p>{props.message}</p>
@@ -14,7 +11,7 @@ const Post = (props) => {
                 : <img src={postImg} alt='postImg'/>
             }
             <div className='postInfo'>
-                <button className='btnStyle'>
+                <button className='btnStyle' onClick={() => {props.postIncrement(props.id)}}>
                     <span>{props.likes}</span>
                     <img src={likeIcon} alt='likeIcon'/>
                 </button>

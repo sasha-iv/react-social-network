@@ -2,7 +2,7 @@ import React from "react";
 import './Photos.scss';
 
 import photo1 from '../../../images/photo/photo1.webp';
-import photo2 from '../../../images/photo/photo2.webp';
+import photo2 from '../../../images/photo/photo2.jpg';
 import photo3 from '../../../images/photo/photo3.webp';
 import photo4 from '../../../images/photo/photo4.jpg';
 import photo5 from '../../../images/photo/photo5.jpg';
@@ -29,7 +29,7 @@ const Photos = () => {
     }
 
     const photoArray = [photo1, photo2, photo3, photo6, photo7,  photo8, photo9, photo4, photo5, photo10, photo11, photo12, photo13, photo14, photo15];
-    const photo = photoArray. map((photo) => <img src={photo} alt='photo' onClick={scalePhoto} />)
+    const photo = photoArray.map((photo, i) => <img key={i}  src={photo} alt='photo' onClick={scalePhoto} />)
 
     return(
         <div className="photosWrapper">

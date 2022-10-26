@@ -53,18 +53,21 @@ $size: 10px;
 }
 
 .btnStyle{
-  width: 70px;
+  width: 80px;
   height: 30px;
   border: 1px solid rgba(2, 16, 101, 0.91);
   border-radius: 30px;
   @include flexBox(center, center);
+  text-decoration: none;
 
   img{
     width: 20px;
     height: 20px;
   }
   span{
-    margin-right: 5px;
+    margin: 5px;
+    color: black;
+    font-size: 15px;
   }
 }
 

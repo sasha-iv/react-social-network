@@ -1,15 +1,27 @@
 import React from "react";
 import './Nav.scss'
 import {NavLink} from "react-router-dom";
-import userPhoto from '../../../images/user.jpg'
+import userPhoto from '../../../images/photo/photo2.jpg'
 import Events from "../Events/Events";
 
 const UserPhoto = (props) => {
     return(
         <div className='userPhoto'>
-            <img src={userPhoto} alt='userPhoto'/>
+            <img src={userPhoto} id='avatar' alt='userPhoto'/>
             <h1>{props.name}</h1>
             <span>{props.nick}</span>
+
+            <div className='iconsNav'>
+                <div className='iconNavItem'>
+                    <span>10 posts</span>
+                </div>
+                <div className='iconNavItem'>
+                    <span>15 photos</span>
+                </div>
+                <div className='iconNavItem'>
+                    <span>16 friends</span>
+                </div>
+            </div>
         </div>
     )
 }
@@ -18,7 +30,7 @@ const Nav = () => {
     return(
         <div className='navWrapper'>
             <div className='nav'>
-                <UserPhoto name='Sasha Ivanova' nick='@Sasha_i'/>
+                <UserPhoto name='Sarah Nelson' nick='@sarah_n'/>
                 <nav>
                     <NavLink to='/profile'>Profile</NavLink>
                     <NavLink to='/dialogs'>Messages</NavLink>

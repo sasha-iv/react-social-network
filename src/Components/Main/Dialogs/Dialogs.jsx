@@ -7,7 +7,6 @@ import { useParams } from 'react-router-dom';
 
 
 const Dialogs = (props) => {
-    console.log(props)
 
     let userId = +useParams().userId;
 

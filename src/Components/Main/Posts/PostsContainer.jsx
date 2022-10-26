@@ -1,5 +1,9 @@
 import React from "react";
-import {addPostActionCreator, updateNewPostTextActionCreator} from '../../../Redux/postReducer';
+import {
+    addPostActionCreator,
+    postIncrementActionCreator,
+    updateNewPostTextActionCreator
+} from '../../../Redux/postReducer';
 import Posts from './Posts'
 import {connect} from "react-redux";
 
@@ -18,6 +22,9 @@ let mapDispatchToProps = (dispatch) => {
         },
         addPost: () => {
             dispatch(addPostActionCreator());
+        },
+        postIncrement: (id) => {
+            dispatch(postIncrementActionCreator(id));
         }
     }
 }

@@ -23,7 +23,6 @@ const Users = (props) => {
                                 : <button onClick={() => {props.unfollowUser(user.id)}} className='btnStyle'>Follow</button>
                             }
                             </span>
-                            <NavLink to={'/dialogs/' + user.id} className='btnStyle'>Message</NavLink>
                             <NavLink to={'/profile/' + user.id} className='btnStyle'>Profile</NavLink>
 
                         </div>

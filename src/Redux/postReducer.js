@@ -13,6 +13,7 @@ import img10 from '../images/10.jpg';
 
 const ADD_POST = 'ADD_POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
+const POST_INCREMENT = 'POST_INCREMENT';
 
 let initialState = {
     posts: [
@@ -52,6 +53,15 @@ const postReducer = (state = initialState, action) => {
                 ...state,
                 newPostText: action.newText
             }
+        case POST_INCREMENT:
+            let indexOfPost = state.posts.findIndex(post => post.id === action.id);
+            state.posts[indexOfPost].likes += 1;
+
+            return{
+                ...state,
+                posts: [...state.posts]
+            }
+
         default:
             return state;
     }
@@ -67,5 +77,12 @@ export const updateNewPostTextActionCreator = (text) => {
         newText: text
     }
 }
+export const postIncrementActionCreator = (id) => {
+    return{
+        type: POST_INCREMENT,
+        id: id
+    }
+}
+
 
 export default postReducer;

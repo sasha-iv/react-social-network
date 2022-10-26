@@ -19,8 +19,12 @@
     font-weight: 400;
     font-size: 25px;
   }
-  button{
-    margin: 30px;
+  a{
+    margin: 20px;
+    width: 100px;
+    font-size: 15px;
+    height: 35px;
+    padding: 20px;
   }
 }
 .userProfile{
@@ -28,18 +32,22 @@
   @include flexBox(center, center);
 
   img{
+    width: 70%;
+    max-width: 500px;
     margin: 20px 0px;
     min-width: 250px;
+    border-radius: 10px;
   }
 }
 .iconsWrapper{
-  @include flexBox(center, flex-start);
+  @include flexBox(center, center);
   flex-wrap: wrap;
   padding: 10px;
+  width: 80%;
 
 }
 .column{
-  @include flexBox(center, flex-start);
+  @include flexBox(center, center);
   flex-direction: column;
   width: 48%;
   min-width: 240px;
