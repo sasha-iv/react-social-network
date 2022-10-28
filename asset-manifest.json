@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-social-network/static/css/main.2cfdf35c.css",
-    "main.js": "/react-social-network/static/js/main.8a5dba61.js",
+    "main.css": "/react-social-network/static/css/main.16f87d9a.css",
+    "main.js": "/react-social-network/static/js/main.e7112057.js",
     "static/media/10.jpg": "/react-social-network/static/media/10.1caa23bf2cf46ce32186.jpg",
     "static/media/user4.jpg": "/react-social-network/static/media/user4.05a8cb7e208905f1ebc1.jpg",
     "static/media/user20.jpg": "/react-social-network/static/media/user20.ced558bdaa27ab0827e6.jpg",
@@ -45,7 +45,7 @@
     "static/media/user6.jpg": "/react-social-network/static/media/user6.1d10bf2b98f4b80529e0.jpg",
     "static/media/photo3.webp": "/react-social-network/static/media/photo3.8fcfa248a34a72521a35.webp",
     "static/media/photo9.webp": "/react-social-network/static/media/photo9.49cff169e5cd2596305b.webp",
-    "static/media/photo2.jpg": "/react-social-network/static/media/photo2.f3d6e22820473b4ad26c.jpg",
+    "static/media/photo2.jpg": "/react-social-network/static/media/photo2.5efff0b850f45de0a404.jpg",
     "static/media/photo6.webp": "/react-social-network/static/media/photo6.2c34c5ab45202da85487.webp",
     "static/media/icon-user.png": "/react-social-network/static/media/icon-user.557587208eb9e232f2ca.png",
     "static/media/icon-phone.png": "/react-social-network/static/media/icon-phone.2ddd243efeb36258a44a.png",
@@ -59,11 +59,11 @@
     "static/media/photo1.webp": "/react-social-network/static/media/photo1.5c993138705573dfe9ca.webp",
     "static/media/icon-id-card.png": "/react-social-network/static/media/icon-id-card.2552777a5b9e818d873c.png",
     "index.html": "/react-social-network/index.html",
-    "main.2cfdf35c.css.map": "/react-social-network/static/css/main.2cfdf35c.css.map",
-    "main.8a5dba61.js.map": "/react-social-network/static/js/main.8a5dba61.js.map"
+    "main.16f87d9a.css.map": "/react-social-network/static/css/main.16f87d9a.css.map",
+    "main.e7112057.js.map": "/react-social-network/static/js/main.e7112057.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cfdf35c.css",
-    "static/js/main.8a5dba61.js"
+    "static/css/main.16f87d9a.css",
+    "static/js/main.e7112057.js"
   ]
 }
