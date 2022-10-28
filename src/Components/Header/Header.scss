@@ -1,3 +1,4 @@
+@import "../Main/mixin";
 
 .header{
     background-color: rgba(2, 16, 101, 0.91);
@@ -9,10 +10,12 @@
 .header_wrapper{
     width: 70%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flexBox(space-between, center);
+    padding: 10px;
+}
+.logo{
+    width: 20%;
+    min-width: 170px;
 
     img, a{
         width: 40px;
@@ -23,36 +26,84 @@
         color: white;
         font-weight: 400;
         letter-spacing: 2px;
-        margin-right: auto;
+        display: inline-block;
+    }
+}
+
+.headerBtns{
+    width: 80%;
+    min-width: 270px;
+    @include flexBox(flex-end, center);
+    flex-wrap: wrap;
+
+    button:hover{
+        scale: 1.08;
+        cursor: pointer;
+    }
+}
+
+.search{
+    width: 40%;
+    min-width: 200px;
+    display: flex;
+    margin: 5px;
+
+    input{
+        border-radius: 15px 0px 0px 15px;
+        padding: 15px;
+        width: 90%;
+        min-width: 150px;
+        outline: none;
+        height: 30px;
+        border: none;
     }
 
-    .search{
-        width: 30%;
-        min-width: 200px;
-        display: flex;
-        margin: 5px;
+    button{
+        border-radius: 0px 15px 15px 0px;
+        background-image: url(./loupe.png);
+        background-position: center;
+        min-width: 30px;
+        background-size: 100%;
+        border: none;
 
-        input{
-            border-radius: 15px 0px 0px 15px;
-            padding: 15px;
-            width: 100%;
-            min-width: 150px;
-            outline: none;
-            height: 30px;
-            border: none;
+        &:hover{
+            cursor: pointer;
         }
+    }
+}
 
-        button{
-            border-radius: 0px 15px 15px 0px;
-            background-image: url(./loupe.png);
-            background-position: center;
-            min-width: 30px;
-            background-size: 100%;
-            border: none;
+.authUser{
+    @include flexBox(space-around, center);
+    width: 20%;
+    min-width: 270px;
+    color: white;
 
-            &:hover{
-                cursor: pointer;
-            }
-        }
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        object-fit: cover;
+    }
+    h3{
+        font-weight: 400;
+        margin: 0px 5px 0px 5px;
+    }
+}
+
+@media(max-width: 350px){
+    .header_wrapper{
+        width: 80%;
+    }
+}
+@media(max-width: 900px){
+    .headerBtns, .header_wrapper{
+        @include flexBox(center, center);
+        flex-wrap: wrap;
+    }
+
+}
+@media(max-width: 1300px) {
+    .header_wrapper{
+        width: 80%;
     }
 }

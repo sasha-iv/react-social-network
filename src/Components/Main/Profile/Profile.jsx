@@ -2,7 +2,7 @@ import React from "react";
 import './Profile.scss'
 import image from '../../../images/photo/photo2.jpg'
 import '../Posts/Posts.scss';
-import {NavLink, useParams} from 'react-router-dom';
+import {Navigate, NavLink, useParams} from 'react-router-dom';
 
 import iconUser from '../../../images/icon-user.png'
 import iconBirth from '../../../images/icon-date-of-birth.png'
@@ -22,9 +22,11 @@ const Profile = (props) => {
         birthday: '18.05.1995',
         phoneNumber: '+38 098 222 33 44',
         location: 'Kyiv, Ukraine',
-        email: 'elena@gmail.com',
+        email: 'sarah@gmail.com',
         hobby: 'walk, play volleyball'
     }
+
+    if (props.isAuth === false) return <Navigate to='/login'/>
 
     return(
         <div className='profileWrapper'>

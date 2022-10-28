@@ -1,0 +1,54 @@
+@import '../Main/mixin';
+
+.loginWrapper{
+  width: calc(60% - 20px);
+  @include blockWithShadow(250px, 600px);
+  @include flexBox(center, center);
+  flex-direction: column;
+  background-color: rgba(2, 16, 101, 0.91);
+  color: white;
+  margin: 20px 10px 0px 10px;
+
+  img{
+    width: 120px;
+    height: 90px;
+
+  }
+}
+.loginWithLogo{
+  width: 100%;
+  min-height: 500px;
+  @include flexBox(flex-start, center);
+  flex-direction: column;
+
+  div{
+    width: 100%;
+    @include flexBox(center, center);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 30px;
+  }
+}
+
+.loginForm{
+  width: 100%;
+  min-height: 230px;
+  margin-top: 20px;
+  @include flexBox(space-around, center);
+  flex-direction: column;
+
+  h2{
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  input{
+    width: 40%;
+    min-width: 200px;
+    height: 40px;
+    padding: 15px;
+    border-radius: 20px;
+    outline: none;
+  }
+
+}

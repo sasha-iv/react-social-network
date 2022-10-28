@@ -1,5 +1,7 @@
 import React from "react";
 import './Photos.scss';
+import {Navigate} from "react-router-dom";
+import {connect} from "react-redux";
 
 import photo1 from '../../../images/photo/photo1.webp';
 import photo2 from '../../../images/photo/photo2.jpg';
@@ -17,7 +19,8 @@ import photo13 from '../../../images/photo/photo13.webp';
 import photo14 from '../../../images/photo/photo14.webp';
 import photo15 from '../../../images/photo/photo15.webp';
 
-const Photos = () => {
+
+const Photos = (props) => {
 
     let scalePhoto = (e) => {
 
@@ -31,6 +34,8 @@ const Photos = () => {
     const photoArray = [photo1, photo2, photo3, photo6, photo7,  photo8, photo9, photo4, photo5, photo10, photo11, photo12, photo13, photo14, photo15];
     const photo = photoArray.map((photo, i) => <img key={i}  src={photo} alt='photo' onClick={scalePhoto} />)
 
+    if (props.isAuth === false) return <Navigate to='/login'/>
+
     return(
         <div className="photosWrapper">
             <div className="photos">
@@ -40,4 +45,11 @@ const Photos = () => {
     )
 }
 
-export default Photos;
+let mapStateToProps = (state) => {
+    return{
+        photos: state.photos,
+        isAuth: state.auth.isAuth
+    }
+}
+
+export default connect(mapStateToProps) (Photos);

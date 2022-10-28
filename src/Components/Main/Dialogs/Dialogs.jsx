@@ -3,7 +3,7 @@ import './Dialogs.scss'
 import '../Posts/Posts.scss'
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
-import { useParams } from 'react-router-dom';
+import {Navigate, useParams} from 'react-router-dom';
 
 
 const Dialogs = (props) => {
@@ -13,6 +13,8 @@ const Dialogs = (props) => {
     // let hideUnreadMessage = () => {
     //     props.unreadMessage(userId);
     // }
+
+    if (props.isAuth === false) return <Navigate to='/login'/>
 
     let dialogsElement = props.dialogsPage.dialogs.map(dialog => <DialogItem  name={dialog.name} id={dialog.id} key={dialog.id} photo={dialog.photo} date={dialog.date} time={dialog.time}/>)
     if (!userId) return(
@@ -40,6 +42,7 @@ const Dialogs = (props) => {
     }
 
     let newMessageBody = props.dialogsPage.newMessageBody;
+
 
     return(
         <div className='dialogs'>

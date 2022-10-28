@@ -1,11 +1,15 @@
 import React from "react";
 import './Videos.scss'
-import {NavLink, Route, Routes} from "react-router-dom";
+import {Navigate, NavLink, Route, Routes} from "react-router-dom";
 import AllVideos from "./All-videos";
 import FavoriteVideos from "./Favorite-videos";
 import '../Friends/Users.scss'
+import {connect} from "react-redux";
 
-const Videos = () => {
+const Videos = (props) => {
+
+    if (props.isAuth === false) return <Navigate to='/login'/>
+
     return(
         <div className='videosWrapper'>
             <div className='filter'>
@@ -24,4 +28,10 @@ const Videos = () => {
 
     )
 }
-export default Videos;
+let mapStateToProps = (state) => {
+    return{
+        videos: state.videos,
+        isAuth: state.auth.isAuth
+    }
+}
+export default connect(mapStateToProps) (Videos);

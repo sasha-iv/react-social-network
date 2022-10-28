@@ -7,11 +7,14 @@ import {
     setUsersActionCreator,
     filterFriendsActionCreator,
 } from "../../../Redux/usersReducer";
+import withAuthRedirect from '../../hoc/withAuthRedirect'
+
 
 let mapStateToProps = (state) => {
     return{
         users: state.usersPage.users,
-        filteredUsers: state.usersPage.filteredUsers
+        filteredUsers: state.usersPage.filteredUsers,
+        isAuth: state.auth.isAuth
     }
 }
 let mapDispatchToProps = (dispatch) => {
@@ -22,13 +25,15 @@ let mapDispatchToProps = (dispatch) => {
         unfollowUser: (userId) => {
             dispatch(unfollowActionCreator(userId))
         },
-        setUsers: (users) => {
-            dispatch(setUsersActionCreator(users))
-        },
+        // setUsers: (users) => {
+        //     dispatch(setUsersActionCreator(users))
+        // },
         filterFriends: (isMine) => {
             dispatch(filterFriendsActionCreator(isMine))
         },
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps) (Users)
+// let AuthRedirectComponent = withAuthRedirect(Users);
+
+export default connect(mapStateToProps, mapDispatchToProps) (Users);

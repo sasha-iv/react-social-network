@@ -2,7 +2,7 @@
 $size: 10px;
 
 .postsWrapper{
-  max-height: calc(100vh - 50px);
+  max-height: calc(100vh - 70px);
   overflow-x: hidden;
   width: calc(60% - $size);           //60!
   min-width: 520px;
@@ -36,10 +36,7 @@ $size: 10px;
     background-color: white;
     color: rgba(2, 16, 101, 0.91);
 
-    &:hover{
-      scale: 1.08;
-      cursor: pointer;
-    }
+
   }
 }
 
@@ -68,6 +65,9 @@ $size: 10px;
     margin: 5px;
     color: black;
     font-size: 15px;
+  }
+  &:hover{
+    cursor: pointer;
   }
 }
 

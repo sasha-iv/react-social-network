@@ -1,6 +1,7 @@
 import React from "react";
 import './Posts.scss'
 import Post from "./Post/Post";
+import {Navigate} from "react-router-dom";
 
 
 const Posts = (props) => {
@@ -14,6 +15,8 @@ const Posts = (props) => {
         let text = newPostElement.current.value;
         props.updateNewPostText(text);
     }
+
+    if (props.isAuth === false) return <Navigate to='/login'/>
 
     return(
         <div className='postsWrapper'>

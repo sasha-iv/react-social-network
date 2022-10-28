@@ -1,13 +1,14 @@
 import './App.scss';
-import Header from './Components/Header/Header.jsx'
 import Main from "./Components/Main/Main.jsx";
+import HeaderContainer from "./Components/Header/HeaderContainer";
+
 
 function App() {
   return (
         <div className="App">
-            <Header/>
+            <HeaderContainer/>
             <div className='main-wrapper'>
-                <Main />
+                <Main/>
             </div>
         </div>
   );

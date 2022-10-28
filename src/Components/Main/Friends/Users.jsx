@@ -1,8 +1,11 @@
 import React from "react";
 import './Users.scss'
 import {NavLink, Route, Routes} from "react-router-dom";
+import {Navigate} from "react-router-dom";
 
 const Users = (props) => {
+    // console.log(props)
+    if (props.isAuth === false) return <Navigate to='/login'/>
 
     return(
         <div className='usersWrapper'>
