@@ -30,7 +30,7 @@ const Dialogs = (props) => {
 
 
     let currentUser = props.dialogsPage.dialogs.find((user) => user.id === userId);
-    let messageElement = currentUser.messages.map(message => <Message key={message.id} message={message.message} fromMe={message.fromMe}/>);
+    let messageElement = currentUser.messages.map(message => <Message date={message.date} key={message.id} message={message.message} fromMe={message.fromMe}/>);
 
 
     let onSendMessageClick = () => {

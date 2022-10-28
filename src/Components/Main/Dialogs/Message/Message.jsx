@@ -5,7 +5,8 @@ const Message = (props) => {
 
     return(
         <div className={`message ${ props.fromMe ? 'fromMe' : 'notFromMe'}`}>
-            {props.message}
+            {props.message} <br/>
+            <span>{props.date}</span>
         </div>
     )
 }
