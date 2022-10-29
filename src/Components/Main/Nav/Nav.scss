@@ -1,7 +1,7 @@
 @import "../mixin";
 
 .navWrapper{
-  width: 20%;
+  max-width: 20%;    // was width: 20%
   min-width: 230px;
   max-height: calc(100vh - 100px);
   height: fit-content;

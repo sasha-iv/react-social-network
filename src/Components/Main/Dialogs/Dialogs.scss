@@ -8,10 +8,10 @@
   justify-content: center;
 }
 .dialogsElement{
-  @include blockWithShadow(250px, 600px);
+  @include blockWithShadow(250px, 0px);
   padding: $size / 2;
   position: relative;
-  max-height: calc(100vh - 100px);
+  //max-height: calc(100vh - 100px);
 
   img{
     width: 50px;
@@ -55,7 +55,8 @@
   margin-right: 10px;
   margin-left: 10px;
   overflow-x: hidden;
-  //max-height: 450px;
+  height: calc(100vh - 100px);
+
 }
 
 .textBlock{
@@ -64,7 +65,7 @@
   width: 60%;
   margin-left: 10px;
   overflow: hidden;
-  //max-height: 450px;
+  height: calc(100vh - 100px);
 
   &-centered{
     @include flexBox(center, center);

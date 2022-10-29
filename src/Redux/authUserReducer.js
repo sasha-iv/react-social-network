@@ -7,7 +7,7 @@ const ADMIN = {
 }
 
 let initialState = {
-    isAuth: true,
+    isAuth: false,
 }
 
 const authUserReducer = (state = initialState, action) => {
@@ -16,7 +16,7 @@ const authUserReducer = (state = initialState, action) => {
             if (action.data.email === ADMIN.email && action.data.password === ADMIN.password) {
                 return{
                     ...state,
-                    isAuth: true
+                    isAuth: true,
                 }
             }
             return state;
