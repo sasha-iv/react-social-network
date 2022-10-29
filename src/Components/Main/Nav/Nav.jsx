@@ -40,7 +40,7 @@ const Nav = () => {
                     <NavLink to='/videos'>Videos</NavLink>
                 </nav>
             </div>
-            <Events customClass="leftEvent"/>
+            {/*<Events customClass="leftEvent"/>*/}
         </div>
 
 

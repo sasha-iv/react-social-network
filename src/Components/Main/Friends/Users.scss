@@ -80,3 +80,9 @@
     min-width: 250px;
   }
 }
+
+@media(max-width: 1700px) {
+  .usersWrapper{
+    width: 75%;
+  }
+}

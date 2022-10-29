@@ -7,7 +7,7 @@ const ADMIN = {
 }
 
 let initialState = {
-    isAuth: false,
+    isAuth: true,
 }
 
 const authUserReducer = (state = initialState, action) => {

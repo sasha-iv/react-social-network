@@ -3,8 +3,9 @@
 .photosWrapper{
   @include blockWithShadow(250px, 600px);
   width: calc(60% - 20px);
-  max-height: calc(100vh - 80px);
+  max-height: calc(100vh - 100px);
   overflow-x: hidden;
+  margin: 20px 5px 5px 5px;
 }
 .photos{
   position: relative;
@@ -14,7 +15,7 @@
 
   img {
     position: relative;
-    width: 30%;
+    width: 28%;
     margin: 10px;
     border-radius: 5px;
     box-shadow: 3px 3px 7px #b9b9b9;
@@ -30,4 +31,10 @@
     z-index: 1;
   }
 
+}
+
+@media(max-width: 1700px) {
+  .photosWrapper{
+    width: 75%;
+  }
 }

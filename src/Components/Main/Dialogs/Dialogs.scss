@@ -8,7 +8,7 @@
   justify-content: center;
 }
 .dialogsElement{
-  @include blockWithShadow(250px, 800px);
+  @include blockWithShadow(250px, 630px);
   padding: $size / 2;
   position: relative;
 
@@ -53,14 +53,17 @@
   width: 30%;
   margin-right: 10px;
   margin-left: 10px;
+  overflow-x: hidden;
+  max-height: 450px;
 }
 
 .textBlock{
   @include flexBox(flex-start, flex-start);
   flex-direction: column;
   width: 60%;
-  //margin-bottom: auto;
   margin-left: 10px;
+  overflow: hidden;
+  max-height: 450px;
 
   &-centered{
     @include flexBox(center, center);
@@ -87,10 +90,9 @@
 .messagesContainer{
   padding: 10px;
   margin: $size 0px;
-  min-height: 530px;
+  height: calc(100% - 140px);
   width: 100%;
   overflow-x: hidden;
-  max-height: 530px;
 
 }
 .message{
@@ -151,7 +153,7 @@
 
 @media(max-width: 1700px){
   .dialogs{
-    width: 70%;
+    width: 75%;
   }
 }
 @media(max-width: 900px){
