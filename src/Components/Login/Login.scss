@@ -50,5 +50,10 @@
     border-radius: 20px;
     outline: none;
   }
+}
 
+@media(max-width: 1500px) {
+  .loginWrapper{
+    width: 75%;
+  }
 }

@@ -13,19 +13,16 @@ class Login extends React.Component {
             isAuth: props.isAuth,
             password: ''
         }
-        // this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
         this.enterProfile = props.setAuthUserActionCreator;
     }
 
-    // handleChange(event) {
-    //     this.setState({value: event.target.value})
-    // }
     handleSubmit(e) {
         e.preventDefault();
         this.setState({value: e.target.value});
         this.enterProfile(this.state.email, this.state.password);
+
     }
     handleInputChange(e) {
         const name = e.target.name;

@@ -2,7 +2,6 @@
   width: 70%;
   margin: 0 auto;
   display: flex;
-  border: 1px solid red;
 }
 
 @media(max-width: 1700px){
@@ -11,12 +10,6 @@
   }
 }
 
-//@media(max-width: 1050px){
-//  .main{
-//    //width: 100%;
-//
-//  }
-//}
 @media(max-width: 950px){
   .main{
     flex-wrap: wrap;

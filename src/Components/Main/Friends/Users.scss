@@ -4,9 +4,8 @@
   max-height: calc(100vh - 100px);
   overflow-x: hidden;
   width: calc(60% - 40px);
-  min-height: 600px;
   margin: 20px 5px 5px 5px;
-  @include blockWithShadow(520px, 0px);
+  @include blockWithShadow(520px, 600px);
 }
 .filter{
   width: 100%;

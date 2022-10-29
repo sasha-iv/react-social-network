@@ -8,9 +8,10 @@
   justify-content: center;
 }
 .dialogsElement{
-  @include blockWithShadow(250px, 630px);
+  @include blockWithShadow(250px, 600px);
   padding: $size / 2;
   position: relative;
+  max-height: calc(100vh - 100px);
 
   img{
     width: 50px;
@@ -54,7 +55,7 @@
   margin-right: 10px;
   margin-left: 10px;
   overflow-x: hidden;
-  max-height: 450px;
+  //max-height: 450px;
 }
 
 .textBlock{
@@ -63,7 +64,7 @@
   width: 60%;
   margin-left: 10px;
   overflow: hidden;
-  max-height: 450px;
+  //max-height: 450px;
 
   &-centered{
     @include flexBox(center, center);
@@ -175,5 +176,13 @@
   .usersBlock{
     margin-right: 0;
     margin-left: 0;
+  }
+}
+@media(max-width: 1350px){         //щоб норм виглядало на макбуках
+  .dialogsElement{
+    min-height: 0px;
+  }
+  .usersBlock, .textBlock{
+    max-height: 610px;
   }
 }
