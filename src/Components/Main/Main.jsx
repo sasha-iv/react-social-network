@@ -21,9 +21,9 @@ const Main = () => {
                 <Route exact path='/react-social-network' element={<PostsContainer/>}/>
 
                 <Route path='/profile/:userId' element={<ProfileContainer/>}/>
-                <Route path='/profile' element={<ProfileContainer/>}/>
+                {/*<Route path='/profile' element={<ProfileContainer/>}/>*/}
                 <Route path='/dialogs/:userId' element={<DialogsContainer />}/>
-                <Route path='/dialogs' element={<DialogsContainer />}/>
+                {/*<Route path='/dialogs' element={<DialogsContainer />}/>*/}
                 <Route path='/friends' element={<UsersContainer/>}/>
                 <Route path='/posts' element={<PostsContainer />}/>
                 <Route path='/photos' element={<Photos/>}/>

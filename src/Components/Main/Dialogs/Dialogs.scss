@@ -11,7 +11,6 @@
   @include blockWithShadow(250px, 0px);
   padding: $size / 2;
   position: relative;
-  //max-height: calc(100vh - 100px);
 
   img{
     width: 50px;
@@ -56,7 +55,7 @@
   margin-left: 10px;
   overflow-x: hidden;
   height: calc(100vh - 100px);
-
+  position: relative;
 }
 
 .textBlock{
@@ -150,6 +149,25 @@
     border-bottom-right-radius: 10px;
   }
 }
+.new{
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  position: absolute;
+
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
+.countMessagesUser{
+  top: 133px;
+  left: 190px;
+}
+.countMessagesNav{
+  top: 50px;
+  left: 150px;
+}
+
 
 
 

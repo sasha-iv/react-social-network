@@ -18,9 +18,9 @@ let mapDispatchToProps = (dispatch) => {
         sendMessage: (userId) => {
             dispatch(sendMessageCreator(userId))
         },
-        // unreadMessage: (userId) => {
-        //     dispatch(unreadMessageCreator(userId));
-        // }
+        unreadMessageBody: (userId) => {
+            dispatch(unreadMessageCreator(userId));
+        }
     }
 }
 

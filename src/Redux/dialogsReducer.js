@@ -9,7 +9,7 @@ import user7 from "../images/user7.jpg";
 
 const SEND_MESSAGE = 'SEND_MESSAGE';
 const UPDATE_NEW_MESSAGE_BODY = 'UPDATE_NEW_MESSAGE_BODY';
-// const UNREAD_MESSAGE = 'UNREAD_MESSAGE';
+const UNREAD_MESSAGE = 'UNREAD_MESSAGE';
 
 let initialState = {
     dialogs: [
@@ -119,7 +119,7 @@ let initialState = {
         },
     ],
     newMessageBody: '',
-    // unreadMessage: false
+    unreadMessage: true
 }
 
 const dialogsReducer = (state = initialState, action) => {
@@ -147,12 +147,16 @@ const dialogsReducer = (state = initialState, action) => {
                 newMessageBody: action.body
             }
 
-        // case UNREAD_MESSAGE:
-        //     // console.log(action)
-        //     if(action.userId === 2){
-        //         state.unreadMessage = true;
-        //     }
-        //     return state;
+        case UNREAD_MESSAGE:
+            console.log(action.userId)
+
+            if(action.userId === 2){
+                return{
+                    ...state,
+                    unreadMessage: false
+                }
+            }
+            return state;
         default:
             return state;
     }
@@ -170,11 +174,12 @@ export const updateNewMessageBodyCreator = (body) => {
     })
 }
 
-// export const unreadMessageCreator = (userId) => {
-//     return({
-//         type: UNREAD_MESSAGE,
-//         userId
-//     })
-// }
+export const unreadMessageCreator = (userId) => {
+    console.log(userId)
+    return({
+        type: UNREAD_MESSAGE,
+        userId
+    })
+}
 
 export default dialogsReducer;

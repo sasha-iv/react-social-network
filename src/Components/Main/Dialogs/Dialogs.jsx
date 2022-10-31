@@ -7,19 +7,20 @@ import {Navigate, useParams} from 'react-router-dom';
 
 
 const Dialogs = (props) => {
+    console.log(props)
 
     let userId = +useParams().userId;
 
-    // let hideUnreadMessage = () => {
-    //     props.unreadMessage(userId);
-    // }
+    let hideUnreadMessage = () => {
+        props.unreadMessageBody(userId);
+    }
 
     if (props.isAuth === false) return <Navigate to='/login'/>
 
-    let dialogsElement = props.dialogsPage.dialogs.map(dialog => <DialogItem  name={dialog.name} id={dialog.id} key={dialog.id} photo={dialog.photo} date={dialog.date} time={dialog.time}/>)
+    let dialogsElement = props.dialogsPage.dialogs.map(dialog => <DialogItem name={dialog.name} unreadMessageFunc={hideUnreadMessage} unreadMessage={props.dialogsPage.unreadMessage} id={dialog.id} key={dialog.id} photo={dialog.photo} date={dialog.date} time={dialog.time}/>)
     if (!userId) return(
         <div className='dialogs'>
-            <div className='dialogsElement usersBlock'>
+            <div className='dialogsElement usersBlock' >
                 {dialogsElement}
             </div>
             <div className='dialogsElement textBlock textBlock-centered'>
