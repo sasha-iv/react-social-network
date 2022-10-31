@@ -7,12 +7,10 @@ import {Navigate, useParams} from 'react-router-dom';
 
 
 const Dialogs = (props) => {
-    console.log(props)
-
     let userId = +useParams().userId;
 
-    let hideUnreadMessage = () => {
-        props.unreadMessageBody(userId);
+    let hideUnreadMessage = (id) => {
+        props.unreadMessageBody(id);
     }
 
     if (props.isAuth === false) return <Navigate to='/login'/>
