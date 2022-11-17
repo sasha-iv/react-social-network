@@ -3,7 +3,6 @@ import './Nav.scss'
 import {NavLink} from "react-router-dom";
 import userPhoto from '../../../images/photo/photo2.jpg';
 import {connect} from "react-redux";
-import {computeHeadingLevel} from "@testing-library/react";
 
 const UserPhoto = (props) => {
     return(

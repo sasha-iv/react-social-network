@@ -3,7 +3,7 @@
 @import '../Posts/Posts';
 
 .profileWrapper{
-  @include blockWithShadow(250px, 600px);
+  @include blockWithShadow(250px, 0px);
   @include  flexBox(center, center);
   flex-direction: column;
   width: calc(60% - 20px);

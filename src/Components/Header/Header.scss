@@ -35,11 +35,6 @@
     min-width: 270px;
     @include flexBox(flex-end, center);
     flex-wrap: wrap;
-
-    button:hover{
-        scale: 1.08;
-        cursor: pointer;
-    }
 }
 
 .search{

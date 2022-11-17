@@ -1,0 +1,13 @@
+@import "../Main/mixin";
+
+.footerWrapper{
+  min-height: 90px;
+  background-color: #d0cece;
+  @include flexBox(center, center);
+  flex-direction: column;
+
+  div{
+    margin: 5px;
+    text-align: center;
+  }
+}

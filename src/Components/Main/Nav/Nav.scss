@@ -5,6 +5,7 @@
   min-width: 230px;
   max-height: calc(100vh - 100px);
   height: fit-content;
+
 }
 .nav{
   @include blockWithShadow(200px, 600px);
@@ -85,3 +86,5 @@ nav{
     }
   }
 }
+
+
